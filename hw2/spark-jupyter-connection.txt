@@ -1,0 +1,18 @@
+1. Скачиваем spark
+2. Добавляем в spark-env.sh:
+#!/usr/bin/env bash
+
+SPARK_WORKER_INSTANCES=2
+SPARK_WORKER_CORES=2
+SPARK_WORKER_MEMORY=2g
+
+3. Запускаем master и 2 workers
+sh start-master.sh
+sh start-worker.sh
+
+4. Запускаем notebook и создаем SparkSession
+
+spark = SparkSession.builder \
+.appName("App") \
+.master("spark://Daniils-MacBook-Pro.local:7077") \
+.getOrCreate()
