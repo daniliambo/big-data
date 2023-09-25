@@ -1,2 +1,2 @@
-# big-data
-## Hse master's course
+# Big Data
+## ITMO / HSE master's course
