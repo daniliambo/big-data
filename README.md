@@ -1,1 +1,2 @@
-# BIG_data
+# big-data
+## Hse master's course
